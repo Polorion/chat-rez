@@ -1,0 +1,26 @@
+.header {
+    background: -webkit-linear-gradient(45deg, rgb(30, 229, 7) 19%, rgb(23, 83, 202) 50%, rgb(174, 28, 170) 88%);
+    background: -moz-linear-gradient(45deg, rgb(30, 229, 7) 19%, rgb(23, 83, 202) 50%, rgb(174, 28, 170) 88%);
+    background: linear-gradient(45deg, rgb(30, 229, 7) 19%, rgb(23, 83, 202) 50%, rgb(174, 28, 170) 88%);
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+
+}
+
+.header img {
+    width: 70px  ;
+    height: 100%;
+
+}
+
+.header button {
+    background-color: transparent;
+    border: 2px solid #26fa26;
+    border-radius: 100px;
+    padding: 10px   30px;
+    font-size: 20px;
+    color: #fff;
+}
