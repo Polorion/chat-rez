@@ -30,7 +30,15 @@ const NewUserSetName = (props) => {
         </label>
         <label className={S.label} htmlFor="">
           <p className={S.p}> url you avatar</p>
-          <input className={S.input} type="text" name={"img"} />
+          <input
+            onChange={(e) => {
+              props.setURL(e.currentTarget.value);
+            }}
+            value={props.URL}
+            className={S.input}
+            type="text"
+            name={"img"}
+          />
         </label>
         <button className={S.button}>Save</button>
       </form>
