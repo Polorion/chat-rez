@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import S from "./chat.module.css";
-import Loader from "../Loader";
+import Loader from "../../utils/Loader";
 import GeneratorRandomString from "../../utils/GeneratorRandomString";
 
 const Chat = (props) => {
-  console.log(props.user);
+  console.log(props.messages);
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
@@ -21,11 +21,7 @@ const Chat = (props) => {
                 className={el.id === props.user.uid ? S.myMess : S.messageBody}
                 key={GeneratorRandomString()}
               >
-                <img
-                  className={S.avatar}
-                  src="https://lh3.googleusercontent.com/a/AItbvmnZ2R1U6Afo-tMjOy_AHqxX2NgHqGTfddBzTEB_=s96-c"
-                  alt=""
-                />
+                <img className={S.avatar} src={el.avatar} alt="" />
                 <div className={S.infoPost}>
                   <p className={S.name}>{el.name}</p>
                   <p className={S.text}>{el.text}</p>
