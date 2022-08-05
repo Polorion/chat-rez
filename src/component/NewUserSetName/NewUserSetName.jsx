@@ -67,7 +67,7 @@ const NewUserSetName = (props) => {
         )}
         {props.file && <p className={S.file}>name file:'{props.file.name}'</p>}
         <button
-          disabled={props.prog > 1 && props.prog < 99 && true}
+          disabled={props.prog >= 1 && props.prog < 99 && true}
           className={S.button}
         >
           Save
