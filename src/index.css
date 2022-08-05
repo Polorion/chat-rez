@@ -35,6 +35,8 @@
 
 html {
   min-height: 100vh;
+  background: rgb(62,62,62);
+  background: linear-gradient(56deg, rgba(62,62,62,1) 0%, rgba(47,47,47,1) 100%);
 }
 body {
   margin: 0;

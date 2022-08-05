@@ -1,7 +1,6 @@
 .header {
-    background: -webkit-linear-gradient(45deg, rgb(30, 229, 7) 19%, rgb(23, 83, 202) 50%, rgb(174, 28, 170) 88%);
-    background: -moz-linear-gradient(45deg, rgb(30, 229, 7) 19%, rgb(23, 83, 202) 50%, rgb(174, 28, 170) 88%);
-    background: linear-gradient(45deg, rgb(30, 229, 7) 19%, rgb(23, 83, 202) 50%, rgb(174, 28, 170) 88%);
+    background: rgb(98,102,96);
+    background: linear-gradient(56deg, rgba(98,102,96,1) 2%, rgba(0,0,0,1) 47%, rgba(98,102,96,1) 98%);
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -9,17 +8,34 @@
     align-items: center;
 
 }
+.name {
 
-.header img {
-    width: 70px  ;
-    height: 100%;
-
+    font-size: 20px;
+    color: #e1e1e1;
 }
+
+.text {
+    color: #e1e1e1;
+    font-size: 30px;
+}
+.accound {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin: 0 30px 0 10px;
+    background-color:#545454;
+}
+
 
 .header button {
     background-color: transparent;
-    border: 2px solid #26fa26;
-    border-radius: 100px;
+    border: 2px solid #172517;
+    border-radius: 20px;
     padding: 10px   30px;
     font-size: 20px;
     color: #fff;
